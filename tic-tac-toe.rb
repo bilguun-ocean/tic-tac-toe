@@ -72,7 +72,7 @@ def is_space_free?(board, move)
 end
 
 def get_player_move(board, player_name)
-  puts "#{player_name} what is your move? (1-9)"
+  puts "#{player_name} what is your move? (0-8)"
   move = gets.chomp.to_i
 
   while (move < 0 || move > 8) || not(is_space_free?(board, move))
